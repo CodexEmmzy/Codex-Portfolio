@@ -236,17 +236,32 @@ nav ul li a:hover::after {
 
 .services-list div a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--standout);
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
-
+    transition: 0.5s;
+}
+.services-list div p a {
+    text-decoration: none;
+    color: var(--standout);
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline;
+    transition: 0.5s;
 }
 .services-list div:hover {
     background-color: var(--standout);
     transform: translateY(-10px);
 }
-
+.services-list div:hover p a {
+    color: var(--white);
+    transform: translateY(10px);
+}
+.services-list div:hover  a {
+    color: var(--white);
+    transform: translateY(10px);
+}
 /* --------------portfolio--------------- */
 
 #portfolio {
